@@ -1,0 +1,10 @@
+PODS:
+  - FIDynamicViewControllerNew (1.5.4)
+
+DEPENDENCIES:
+  - FIDynamicViewControllerNew (~> 1.5)
+
+SPEC CHECKSUMS:
+  FIDynamicViewControllerNew: 209b6c5c6c2c6eab4d05c2ea4ee1f9215eae2f08
+
+COCOAPODS: 0.39.0
