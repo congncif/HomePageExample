@@ -12,6 +12,7 @@
 		206B22F11C51E5DE00377675 /* JMButtons2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B22F01C51E5DE00377675 /* JMButtons2ViewController.m */; };
 		206B22F41C52166C00377675 /* NSArray+iF.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B22F31C52166C00377675 /* NSArray+iF.m */; };
 		206B22F71C52196500377675 /* JMHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B22F61C52196500377675 /* JMHomeCollectionViewCell.m */; };
+		206B22FA1C521B4C00377675 /* UIColor+iF.m in Sources */ = {isa = PBXBuildFile; fileRef = 206B22F91C521B4C00377675 /* UIColor+iF.m */; };
 		20F9CB961C51D9C100598CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F9CB951C51D9C100598CAA /* main.m */; };
 		20F9CB991C51D9C100598CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F9CB981C51D9C100598CAA /* AppDelegate.m */; };
 		20F9CB9C1C51D9C100598CAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F9CB9B1C51D9C100598CAA /* ViewController.m */; };
@@ -32,6 +33,8 @@
 		206B22F31C52166C00377675 /* NSArray+iF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+iF.m"; sourceTree = "<group>"; };
 		206B22F51C52196500377675 /* JMHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMHomeCollectionViewCell.h; sourceTree = "<group>"; };
 		206B22F61C52196500377675 /* JMHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		206B22F81C521B4C00377675 /* UIColor+iF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iF.h"; sourceTree = "<group>"; };
+		206B22F91C521B4C00377675 /* UIColor+iF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iF.m"; sourceTree = "<group>"; };
 		20F9CB911C51D9C100598CAA /* JMHomeScreen2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMHomeScreen2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F9CB951C51D9C100598CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20F9CB971C51D9C100598CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				206B22F01C51E5DE00377675 /* JMButtons2ViewController.m */,
 				206B22F21C52166C00377675 /* NSArray+iF.h */,
 				206B22F31C52166C00377675 /* NSArray+iF.m */,
+				206B22F81C521B4C00377675 /* UIColor+iF.h */,
+				206B22F91C521B4C00377675 /* UIColor+iF.m */,
 				206B22F51C52196500377675 /* JMHomeCollectionViewCell.h */,
 				206B22F61C52196500377675 /* JMHomeCollectionViewCell.m */,
 			);
@@ -259,6 +264,7 @@
 			files = (
 				206B22F41C52166C00377675 /* NSArray+iF.m in Sources */,
 				206B22EE1C51E5AA00377675 /* JMSlideShow2ViewController.m in Sources */,
+				206B22FA1C521B4C00377675 /* UIColor+iF.m in Sources */,
 				20F9CB9C1C51D9C100598CAA /* ViewController.m in Sources */,
 				206B22F11C51E5DE00377675 /* JMButtons2ViewController.m in Sources */,
 				206B22F71C52196500377675 /* JMHomeCollectionViewCell.m in Sources */,
