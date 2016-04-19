@@ -175,6 +175,7 @@
 				TargetAttributes = {
 					20F9CB901C51D9C100598CAA = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = GN2TJJDQ3F;
 					};
 				};
 			};
@@ -383,9 +384,10 @@
 			baseConfigurationReference = F68000D50ED243DECF3BFEF4 /* Pods-JMHomeScreen2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JMHomeScreen2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.if.JMHomeScreen2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.if.app-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -395,9 +397,10 @@
 			baseConfigurationReference = DAF4798FE2FF685956AB35D1 /* Pods-JMHomeScreen2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JMHomeScreen2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.if.JMHomeScreen2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.if.app-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
