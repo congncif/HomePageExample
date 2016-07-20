@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'JMHomeScreen2' do
 
-pod 'FIDynamicViewControllerNew', '~> 1.5'
+pod 'FIDynamicViewControllerNew', '~> 1.7'
 
 end
 

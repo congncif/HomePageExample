@@ -7,7 +7,11 @@
 
 ## Usage
 
+Easy to build and manage complex view controllers
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Example: https://github.com/congncif/HomePageExample
 
 ## Requirements
 
@@ -27,3 +31,8 @@ NGUYEN CHI CONG, congnc.if@gmail.com
 ## License
 
 FIDynamicViewController is available under the MIT license. See the LICENSE file for more info.
+
+## Some apps
+[![IMAGE ALT TEXT HERE](http://i.imgur.com/br6X0Bv.png)](https://youtu.be/zTPVMOvEQ4I)
+
+[![IMAGE ALT TEXT HERE](http://i.imgur.com/knicmvj.png)](https://youtu.be/9WBnWyKJrZY)

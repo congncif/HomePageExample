@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79DE4EB9C88623A1B9D8767CB1B20FBA"
+               BlueprintIdentifier = "E49620855F69FFD46A3FCA98D6463F21"
                BuildableName = "Pods_JMHomeScreen2.framework"
                BlueprintName = "Pods-JMHomeScreen2"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "79DE4EB9C88623A1B9D8767CB1B20FBA"
+            BlueprintIdentifier = "E49620855F69FFD46A3FCA98D6463F21"
             BuildableName = "Pods_JMHomeScreen2.framework"
             BlueprintName = "Pods-JMHomeScreen2"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "79DE4EB9C88623A1B9D8767CB1B20FBA"
-            BuildableName = "Pods_JMHomeScreen2.framework"
-            BlueprintName = "Pods-JMHomeScreen2"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

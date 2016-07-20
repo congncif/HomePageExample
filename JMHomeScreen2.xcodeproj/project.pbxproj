@@ -19,7 +19,8 @@
 		20F9CB9F1C51D9C100598CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F9CB9D1C51D9C100598CAA /* Main.storyboard */; };
 		20F9CBA11C51D9C100598CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F9CBA01C51D9C100598CAA /* Assets.xcassets */; };
 		20F9CBA41C51D9C100598CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F9CBA21C51D9C100598CAA /* LaunchScreen.storyboard */; };
-		34F5072B7A1B963E36AC0B1A /* Pods_JMHomeScreen2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8A24DC73986CFA55152359 /* Pods_JMHomeScreen2.framework */; };
+		DBAC760D1D3F2E4E00B7C110 /* CustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAC760C1D3F2E4E00B7C110 /* CustomModel.m */; };
+		F19C9CC122AC11271688D456 /* Pods_JMHomeScreen2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C470B376BDD80321C13A5731 /* Pods_JMHomeScreen2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +46,11 @@
 		20F9CBA01C51D9C100598CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F9CBA31C51D9C100598CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F9CBA51C51D9C100598CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA8A24DC73986CFA55152359 /* Pods_JMHomeScreen2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMHomeScreen2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAF4798FE2FF685956AB35D1 /* Pods-JMHomeScreen2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMHomeScreen2.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2.release.xcconfig"; sourceTree = "<group>"; };
-		F68000D50ED243DECF3BFEF4 /* Pods-JMHomeScreen2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMHomeScreen2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2.debug.xcconfig"; sourceTree = "<group>"; };
+		31BCCCE87F777A4F0960C954 /* Pods-JMHomeScreen2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMHomeScreen2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2.debug.xcconfig"; sourceTree = "<group>"; };
+		C1E13EE09FBB5372B78FECFD /* Pods-JMHomeScreen2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMHomeScreen2.release.xcconfig"; path = "Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2.release.xcconfig"; sourceTree = "<group>"; };
+		C470B376BDD80321C13A5731 /* Pods_JMHomeScreen2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMHomeScreen2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAC760B1D3F2E4E00B7C110 /* CustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomModel.h; sourceTree = "<group>"; };
+		DBAC760C1D3F2E4E00B7C110 /* CustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,38 +58,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34F5072B7A1B963E36AC0B1A /* Pods_JMHomeScreen2.framework in Frameworks */,
+				F19C9CC122AC11271688D456 /* Pods_JMHomeScreen2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BB65851F9E58F7D022A471C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F68000D50ED243DECF3BFEF4 /* Pods-JMHomeScreen2.debug.xcconfig */,
-				DAF4798FE2FF685956AB35D1 /* Pods-JMHomeScreen2.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		13AC1AAFD34AD7E526944983 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CA8A24DC73986CFA55152359 /* Pods_JMHomeScreen2.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		20F9CB881C51D9C100598CAA = {
 			isa = PBXGroup;
 			children = (
 				20F9CBAB1C51DBF400598CAA /* Classes */,
 				20F9CB931C51D9C100598CAA /* JMHomeScreen2 */,
 				20F9CB921C51D9C100598CAA /* Products */,
-				0BB65851F9E58F7D022A471C /* Pods */,
-				13AC1AAFD34AD7E526944983 /* Frameworks */,
+				4D5BBEF5B29A94090031063C /* Pods */,
+				DC46DBF23DB4B8093629ADFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,8 +123,27 @@
 				206B22F91C521B4C00377675 /* UIColor+iF.m */,
 				206B22F51C52196500377675 /* JMHomeCollectionViewCell.h */,
 				206B22F61C52196500377675 /* JMHomeCollectionViewCell.m */,
+				DBAC760B1D3F2E4E00B7C110 /* CustomModel.h */,
+				DBAC760C1D3F2E4E00B7C110 /* CustomModel.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		4D5BBEF5B29A94090031063C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31BCCCE87F777A4F0960C954 /* Pods-JMHomeScreen2.debug.xcconfig */,
+				C1E13EE09FBB5372B78FECFD /* Pods-JMHomeScreen2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC46DBF23DB4B8093629ADFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C470B376BDD80321C13A5731 /* Pods_JMHomeScreen2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20F9CBA81C51D9C100598CAA /* Build configuration list for PBXNativeTarget "JMHomeScreen2" */;
 			buildPhases = (
-				FD79778F0894E37F44C1484A /* Check Pods Manifest.lock */,
+				B9E562E6504278FD382FECF1 /* [CP] Check Pods Manifest.lock */,
 				20F9CB8D1C51D9C100598CAA /* Sources */,
 				20F9CB8E1C51D9C100598CAA /* Frameworks */,
 				20F9CB8F1C51D9C100598CAA /* Resources */,
-				9FFA70A77C9C1B37F72E4146 /* Embed Pods Frameworks */,
-				EA1E97EB791441A5C59FADB5 /* Copy Pods Resources */,
+				7E97210959919E2850B051AA /* [CP] Embed Pods Frameworks */,
+				BA0076C1AAACED18FEB20765 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,14 +216,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9FFA70A77C9C1B37F72E4146 /* Embed Pods Frameworks */ = {
+		7E97210959919E2850B051AA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,34 +231,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA1E97EB791441A5C59FADB5 /* Copy Pods Resources */ = {
+		B9E562E6504278FD382FECF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD79778F0894E37F44C1484A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0076C1AAACED18FEB20765 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JMHomeScreen2/Pods-JMHomeScreen2-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAC760D1D3F2E4E00B7C110 /* CustomModel.m in Sources */,
 				206B22F41C52166C00377675 /* NSArray+iF.m in Sources */,
 				206B22EE1C51E5AA00377675 /* JMSlideShow2ViewController.m in Sources */,
 				206B22FA1C521B4C00377675 /* UIColor+iF.m in Sources */,
@@ -381,7 +387,7 @@
 		};
 		20F9CBA91C51D9C100598CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F68000D50ED243DECF3BFEF4 /* Pods-JMHomeScreen2.debug.xcconfig */;
+			baseConfigurationReference = 31BCCCE87F777A4F0960C954 /* Pods-JMHomeScreen2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -394,7 +400,7 @@
 		};
 		20F9CBAA1C51D9C100598CAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAF4798FE2FF685956AB35D1 /* Pods-JMHomeScreen2.release.xcconfig */;
+			baseConfigurationReference = C1E13EE09FBB5372B78FECFD /* Pods-JMHomeScreen2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

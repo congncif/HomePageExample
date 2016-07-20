@@ -1,10 +1,12 @@
 PODS:
-  - FIDynamicViewControllerNew (1.5.4)
+  - FIDynamicViewControllerNew (1.7.4)
 
 DEPENDENCIES:
-  - FIDynamicViewControllerNew (~> 1.5)
+  - FIDynamicViewControllerNew (~> 1.7)
 
 SPEC CHECKSUMS:
-  FIDynamicViewControllerNew: 209b6c5c6c2c6eab4d05c2ea4ee1f9215eae2f08
+  FIDynamicViewControllerNew: 6f92457e3130beb50d1861475a116ec1f4718a48
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 8c964c1b275969044b5c0966c395ede0ee6cb6b7
+
+COCOAPODS: 1.0.1

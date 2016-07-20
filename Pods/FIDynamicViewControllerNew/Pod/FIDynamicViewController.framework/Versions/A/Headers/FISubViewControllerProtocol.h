@@ -16,7 +16,7 @@
 /**
  Reference of presenter model, setting automatic
 */
-@property (nonatomic, weak) id dynamicPresenter;
+@property (nonatomic, weak) id dynamicModel;
 
 @property (nonatomic, weak) id<FIDynamicViewControllerProtocol> containerController;
 
@@ -27,7 +27,7 @@
 
 - (CGFloat)heightForLayout;
 
-- (void)needUpdateLayoutAnimated: (BOOL)animated;
+- (void)needUpdateLayout;
 
 /**
  *
@@ -39,6 +39,7 @@
  [Implementation] To handler when model changed
 */
 - (void)presenterNeedUpdate;
+- (void)presenterChangedValue: (id)value keyPath:(NSString *)keyPath;
 
 /**
  [Implementation] Recive action from container view controller

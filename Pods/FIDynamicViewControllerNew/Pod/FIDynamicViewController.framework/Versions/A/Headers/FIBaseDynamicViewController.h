@@ -8,25 +8,23 @@
 
 #import <UIKit/UIKit.h>
 #import "FIDynamicViewControllerProtocol.h"
+#import "FIDynamicPresenterProtocol.h"
 
 @interface FIBaseDynamicViewController : UIViewController<FIDynamicViewControllerProtocol>
 
 /**
   Model for storing data model in view controller
 */
-@property (nonatomic, strong) id __nonnull dynamicPresenter;
+@property (nonatomic, readonly) id <FIDynamicModelProtocol>__nullable dynamicModel;
+
+- (void)setDynamicPresenterModel:(id <FIDynamicModelProtocol>_Nullable)dynamicModel;
+
 
 /**
   Call this method to update model presenter
 */
 - (void)updatePresenterWithBlock: (void(^ __nullable)()) block;
-
-/**
-  Override this methods to handle when presenter updated
-*/
-- (void)presenterNeedUpdate;
-
-- (void)presenterDidLoad;
+- (void)updatePresenterProperty:(SEL __nonnull) selector withBlock:(void(^ __nullable)( id __nullable value)) block;
 
 /**
   Functions
@@ -35,5 +33,24 @@
 - (void)addSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController withConfiguration: (void(^ __nullable)(UIView * __nonnull childView))configurationBlock;
 - (void)removeSubViewController:(UIViewController <FISubViewControllerProtocol>* __nonnull)childController;
 
+
+
+
+
+#pragma mark - Override
+/*------------------------------------------------------*/
+/**
+ Override this methods to handle when presenter updated
+ */
+- (void)presenterNeedUpdate;
+
+- (void)presenterDidLoad;
+
+- (void)presenterChangedValue: (id __nullable)value keyPath:(NSString * __nonnull)keyPath;
+
+
+#pragma mark - deprecated
+/*------------------------------------------------------*/
+- (void)subViewControllerNeedUpdateLayout:(id<FISubViewControllerProtocol> __nullable) subViewController animated:(BOOL)animated __attribute__((deprecated("This method has been deprecated and will be removed in laster version. Please use subViewControllerNeedUpdateLayout: instead.")));
 
 @end

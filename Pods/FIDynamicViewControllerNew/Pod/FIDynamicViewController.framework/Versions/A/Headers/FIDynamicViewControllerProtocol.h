@@ -14,7 +14,7 @@
 /**
  Presenter model for store, exchange data
 */
-@property (nonatomic, strong) id dynamicPresenter;
+@property (nonatomic, readonly) id dynamicModel;
 
 /**
  *
@@ -32,6 +32,8 @@
 */
 - (void)presenterNeedUpdate;
 
+- (void)presenterChangedValue: (id)value keyPath:(NSString *)keyPath;
+
 /**
  [Function] Send custom action to sub view controllers.
  return YES if action passes all sub controllers successfully.
@@ -44,7 +46,7 @@
  [Implementation] Delegate Methods sent from subviewcontroller
 */
 - (void)subViewController: (id<FISubViewControllerProtocol>) subViewController changedPresenter: (id)presenter;
-- (void)subViewControllerNeedUpdateLayout: (id<FISubViewControllerProtocol>) subViewController animated:(BOOL)animated;
+- (void)subViewControllerNeedUpdateLayout: (id<FISubViewControllerProtocol>) subViewController;
 
 @optional
 /**

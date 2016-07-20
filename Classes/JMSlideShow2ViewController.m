@@ -61,7 +61,13 @@
 
 //MARK: CollectionView Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+#warning AS: Step 1
+    /**
+     *  SEND ACTION TO Other sub view controller
+     */
+    id info = @{@"command": @"send action to sub viewcontroller",
+                @"data": @"data"};
+    [self.containerController sendActionToSubControllersWithInfo:info];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
@@ -74,6 +80,17 @@
     
     NSInteger page = offet.x / self.collectionView.frame.size.width;
     self.pageControl.currentPage = page;
+}
+
+#warning UM: Step 2
+/**
+ *  Handle when dynamic model updated
+ *
+ */
+- (void)presenterChangedValue:(id)value keyPath:(NSString *)keyPath {
+    [super presenterChangedValue:value keyPath:keyPath];
+    NSLog(@"Model did changed %@ for %@", value, keyPath);
+    NSLog(@"TOTO Update UI HERE: update UI if needed");
 }
 
 @end

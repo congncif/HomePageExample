@@ -10,6 +10,7 @@
 
 #import "NSArray+iF.h"
 #import "UIColor+iF.h"
+#import "CustomModel.h"
 
 @interface JMButtons2ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -24,6 +25,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.autoReduceToFitContent = YES;
+    
+#warning - Guide for fitting content
+    /**
+     *  Set up view for fit content in subview controller
+     */
+    self.fitContentView = self.collectionView;
 }
 
 - (NSInteger)numberOfColumnsInLine{
@@ -36,11 +43,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (CGFloat)heightForLayout{
-    
-    return self.collectionView.contentSize.height;
 }
 
 //MARK: CollectionView Datasource
@@ -74,8 +76,28 @@
 //MARK: CollectionView Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+#warning SA: Step 1
+    /**
+     *  SEND ACTION TO CONTAINER VIEW CONTROLLER
+     */
+    id info = @{
+                @"command": @"updateTitle",
+                @"title": @"New Title"
+                };
+    
+    [self.containerController subViewController:self sentActionWithInfo:info];
+    
+    
+#warning UM: Step 1
+    /**
+     *  Will update dynamic model & send action to update UI if needed
+     */
+    __block CustomModel *model = (CustomModel *)self.dynamicModel;
+    [self updatePresenterProperty:@selector(title) withBlock:^(id  _Nullable value) {
+        model.title = @"new title from updating presenter";
+    }];
+    
 }
-
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(nonnull UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
     
@@ -88,7 +110,14 @@
     return CGSizeMake(width, height);
 }
 
-
+#warning AS: Step 2
+/**
+ *  Receive ACTION From Other sub view controller
+ */
+- (BOOL)receiveActionWithInfo: (id)actionInfo {
+    NSLog(@"Action info: %@", actionInfo);
+    return YES;
+}
 
 
 
